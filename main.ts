@@ -1,11 +1,16 @@
+input.onButtonPressed(Button.A, function () {
+    scrollbit.clear()
+    scrollbit.scrollText("I{Heart}you!", 64, 50)
+    scrollbit.show()
+})
 input.onButtonPressed(Button.B, function () {
     scrollbit.clear()
-    Linie2(1, 1, 1, 1)
-    Linie2(1, 1, 1, 1)
-    Linie2(1, 1, 1, 1)
-    Linie2(1, 1, 1, 1)
-    Linie2(1, 1, 1, 1)
-    Linie2(1, 1, 1, 1)
+    Linie2(0, 0, 16, 0)
+    Linie2(16, 1, 16, 6)
+    Linie2(15, 6, 0, 6)
+    Linie2(0, 5, 0, 1)
+    Linie2(1, 1, 15, 5)
+    Linie2(1, 5, 15, 1)
 })
 function Linie2 (x0: number, y0: number, x1: number, y1: number) {
     x = x0
@@ -57,6 +62,3 @@ basic.showLeds(`
     `)
 scrollbit.clear()
 scrollbit.show()
-basic.forever(function () {
-    scrollbit.setPixel(0, 0, 128)
-})
